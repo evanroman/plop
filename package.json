@@ -15,8 +15,7 @@
     "pouchdb": "1.1.0"
   },
   "devDependencies": {
-    "connect-redis": "1.4.6",
-    "less-middleware": "0.1.15",
+    "connect-redis": "1.4.6"
   },
   "keywords": [
     "express",
