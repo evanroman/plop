@@ -1,0 +1,40 @@
+{
+  "name": "plop",
+  "description": "A Blog CMS that uses PouchDB locally or remotely for storage.",
+  "version": "0.1.0",
+  "author": "Evan Roman <evanroman1@gmail.com>",
+  "contributors": [
+    {
+      "name": "Evan Roman",
+      "email": "evanroman1@gmail.com"
+    }
+  ],
+  "dependencies": {
+    "express": "3.4.7",
+    "moment": "2.5.0",
+    "pouchdb": "1.1.0"
+  },
+  "devDependencies": {
+    "connect-redis": "1.4.6",
+    "less-middleware": "0.1.15",
+  },
+  "keywords": [
+    "express",
+    "cms",
+    "blog",
+    "web",
+    "content",
+    "pouchDB",
+    "couchDB",
+    "wordpress"
+  ],
+  "repository": "git://github.com/evanroman/plop",
+  "scripts": {
+    "prepublish": "npm prune",
+    "test": "make test"
+  },
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "license": "GPLv2"
+}
