@@ -1,0 +1,29 @@
+{% extends 'layout.html' %}
+{% block content %}
+{% for post in posts %}
+            <!-- A wrapper for all the blog posts -->
+            <div class="posts">
+                <section class="post">
+                    <header class="post-header">
+                        <img class="post-avatar" alt="{{author.name }}" height="48" width="48" src="img/avatars/{{ author.id }}">
+
+                        <h2 class="post-title">{{ post.value.t }}</h2>
+
+                        <p class="post-meta">
+                            By {{ post.value.a }}
+                        </p>
+                    </header>
+
+                    <div class="post-description">
+                        <p>
+                            {{ post.value.c }}
+                        </p>
+                    </div>
+                </section>
+            </div>
+{% endfor %}
+            <div>
+                <p>Page {{ page }}</p>
+                <a href="/home?p={{ next }}">Next Page</a>
+            </div>
+{% endblock %}

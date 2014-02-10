@@ -1,0 +1,21 @@
+{% extends 'layout.html' %}
+{% block content %}
+<form class="pure-form pure-form-aligned" method="post" action="/addentry" name="entryForm">
+    <input type="hidden" name="_csrf" value="{{ csrftoken }}">
+    <fieldset>
+        <div class="pure-control-group">
+            <label for="entrytitle">Entry Title</label>
+            <input id="entrytitle" type="text" placeholder="title" name="entrytitle">
+        </div>
+        <div class="pure-control-group">
+            <label for="entrycontent">Entry Content</label>
+            <textarea id="entrycontent" name="entrycontent" rows="6" cols="60"></textarea>
+        </div>
+        <div class="pure-controls">
+   
+
+            <button name="submit" type="submit" class="pure-button pure-button-primary">Submit</button>
+        </div>
+    </fieldset>
+</form>
+{% endblock %}

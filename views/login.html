@@ -1,0 +1,22 @@
+{% extends 'layout.html' %}
+{% block content %}
+<p>{{ error }}</p>
+<form class="pure-form pure-form-aligned" method="post" action="/login" name="registerForm">
+    <input type="hidden" name="_csrf" value="{{ csrftoken }}">
+    <fieldset>
+        <div class="pure-control-group">
+            <label for="loginname"> User Name</label>
+            <input id="loginname" type="text" placeholder="User" name="loginname">
+        </div>
+        <div class="pure-control-group">
+            <label for="password">Password</label>
+            <input id="password" type="password" placeholder="Password" name="password">
+        </div>
+        <div class="pure-controls">
+   
+
+            <button name="submit" type="submit" class="pure-button pure-button-primary">Submit</button>
+        </div>
+    </fieldset>
+</form>
+{% endblock %}
