@@ -13,12 +13,7 @@
     "express": "3.4.7",
     "moment": "2.5.0",
     "sqlite3": "2.2.0",
-    "swig": "1.2.2",
-    "jugglingdb": "0.2.x",
-    "jugglingdb-sqlite3": "latest"
-  },
-  "devDependencies": {
-    "connect-redis": "1.4.6"
+    "swig": "1.2.2"
   },
   "keywords": [
     "express",
@@ -26,8 +21,8 @@
     "blog",
     "web",
     "content",
-    "pouchDB",
-    "couchDB",
+    "SQL",
+    "SQLite",
     "wordpress"
   ],
   "repository": "git://github.com/evanroman/plop",

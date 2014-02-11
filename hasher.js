@@ -1,6 +1,7 @@
 //Makes hashes of passwords
 crypto = require('crypto');
-var passwordhashingalgorithm='sha224'
+var settings = require('./settings');
+var passwordhashingalgorithm= settings.hashalgorithm;
 //hasher
 // base64 before input to this function
 var passwordHasher = function(password) {
