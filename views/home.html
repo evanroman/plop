@@ -5,18 +5,18 @@
             <div class="posts">
                 <section class="post">
                     <header class="post-header">
-                        <img class="post-avatar" alt="{{author.name }}" height="48" width="48" src="img/avatars/{{ author.id }}">
+                        <img class="post-avatar" alt="{{ post.author }}" height="48" width="48" src="img/avatars/{{ post.author }}.png">
 
-                        <h2 class="post-title">{{ post.value.t }}</h2>
+                        <h2 class="post-title">{{ post.title }}</h2>
 
                         <p class="post-meta">
-                            By {{ post.value.a }}
+                            By {{ post.author}}
                         </p>
                     </header>
 
                     <div class="post-description">
                         <p>
-                            {{ post.value.c }}
+                            {{ post.content }}
                         </p>
                     </div>
                 </section>

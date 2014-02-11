@@ -1,6 +1,6 @@
 var moment = require('moment');
 var settings = require('../settings');
-var entriesdb = require("../pouchdb/entriesdb");
+var sqlite = require("../sqlite");
 
 exports.addEntryGet = function(request, response){
     response.render('addentry', {
@@ -15,7 +15,7 @@ exports.addEntryPost = function(request, response){
     var new_date = moment(new Date()).unix();
     if(request.session.user){
         var username = request.session.user;
-        entriesdb.addEntry(username, new_date, new_title, new_content);
+        sqlite.newEntry(new_title, new_date, username, new_content);
         response.redirect('/');
     }else{
         response.redirect('/login');
