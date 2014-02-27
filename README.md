@@ -9,7 +9,13 @@ For basic installation clone the repository
 
 > git clone git@github.com:evanroman/plop.git 
 
-and install dependencies 
+and install dependencies by executing in the cloned directory.
+
+> npm install
+
+To run execute `index.js` with node
+
+> node index.js
 
 ## Configuration 
 Plop stores configuration as javascript variables in `setting.js` by default. This allows the deployer to easily implement whatever user management and session system they prefer to use. For example, Ativnos uses MongoDB for user data and Redis for sessions. 
